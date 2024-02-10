@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Code Search</title>
+</head>
+<style type="text/css">
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+#hintText {
+    font-size: 14px;
+    color: #007bff;
+    margin-left: 5px;
+}
+
+#searchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+pre {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 1.4;
+    color: yellow; /* Change code text color */
+}
+
+
+
+</style>
+<body>
+    <div class="container">
+        <h1>Code Search</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for algorithms and coding problems...">
+            <span id="hintText" class="hint-text"></span>
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="buttons">
+            <button id="allAlgorithmsButton">All Algorithms</button>
+            <button id="basicQuestionsButton">Basic Java Questions</button>
+        </div>
+        <pre id="codeResult"></pre>
+    </div>
+</body>
+</html>
